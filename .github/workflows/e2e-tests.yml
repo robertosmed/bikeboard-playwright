@@ -21,11 +21,11 @@ jobs:
       run: npm install
 
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install --with-deps chromium
 
     - name: Run E2E tests
       run: npx playwright test
-      
+
     - uses: actions/upload-artifact@v5
       if: ${{ !cancelled() }}
       with:
