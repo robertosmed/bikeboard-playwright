@@ -34,7 +34,7 @@ test.describe("Cadastro de Anúncio", () => {
     await actions.submitAdForm()
 
     const expectedAlerts = [
-      "Título deve ter pelo menos 10 dígitos",
+      "Título deve ter pelo menos 10 caracteres",
       "Descrição deve ter pelo menos 30 caracteres",
       "Marca é obrigatória",
       "Modelo é obrigatório",
